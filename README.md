@@ -10,7 +10,7 @@ DayZ-style sickness for QB-Core. Wet exposure causes illness; eating human/zombi
        return exports['tls_sickness']:GetSicknessForHUD()
    end
    ```
-3. Qbcore Items (For Core Inventory)
+3. Qbcore Items (For Core Inventory) Check Install foldor for image
   ```
   sickness_pills   = { name = 'sickness_pills', label = 'Sickness Pills', weight = 0, type = 'item', image = 'sickness_pills.png', unique = false, useable = true, shouldClose = true, description = 'The Label Has Been Ripped Off', x = 1,   y = 2, category = 'ENTER YOUR CATEGORY HERE!!!!!!', },
   ```
