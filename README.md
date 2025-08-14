@@ -11,10 +11,13 @@ DayZ-style sickness for QB-Core. Wet exposure causes illness; eating human/zombi
    end
    ```
 3. Qbcore Items (For Core Inventory)
-    sickness_pills   = { name = 'sickness_pills', label = 'Sickness Pills', weight = 0, type = 'item', image = 'sickness_pills.png', unique = false, useable = true, shouldClose = true, description = 'The Label Has Been Ripped Off', x = 1,   y = 2, category = 'ENTER YOUR CATEGORY HERE!!!!!!', },
+  ```
+  sickness_pills   = { name = 'sickness_pills', label = 'Sickness Pills', weight = 0, type = 'item', image = 'sickness_pills.png', unique = false, useable = true, shouldClose = true, description = 'The Label Has Been Ripped Off', x = 1,   y = 2, category = 'ENTER YOUR CATEGORY HERE!!!!!!', },
+  ```
   (Non Core Inventory)
+  ```
   sickness_pills   = { name = 'sickness_pills', label = 'Sickness Pills', weight = 0, type = 'item', image = 'sickness_pills.png', unique = false, useable = true, shouldClose = true, description = 'The Label Has Been Ripped Off',},
-
+  ```
 
 ## Persistence (Default: Database via oxmysql)
 - Configure in `config.lua`:
