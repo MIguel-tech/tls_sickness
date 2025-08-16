@@ -5,7 +5,7 @@ lua54 'yes'
 name 'tls_sickness'
 author 'Anyname'
 description 'DayZ-style wet sickness + cannibal madness for QBCore with HUD exports, gradual cures, progress bars, cooldowns, DB/file persistence, proximity laughter, debug, logging, and admin commands'
-version '0.3'
+version '0.4'
 
 ui_page 'html/index.html'
 

@@ -1,4 +1,4 @@
-# tls_sickness (v0.3)
+# tls_sickness (v0.4)
 
 DayZ-style sickness for QB-Core. Wet exposure causes illness; eating human/zombie meat causes madness (laughing). Gradual cures, HUD exports, progress bars, cooldowns, persistence (DB/file), proximity audio, logging, admin commands, and debug tools.
 
@@ -6,16 +6,16 @@ DayZ-style sickness for QB-Core. Wet exposure causes illness; eating human/zombi
 1. Drop the folder into `resources` and `ensure tls_sickness` **after** `qb-core` (and `hate-temp` if your using it).
 2. HUD hook (example for hate-dayzhud):
    ```lua
-   Config.GetSickness = function()
-       return exports['tls_sickness']:GetSicknessForHUD()
-   end
+  Config.GetInfection = function()
+      return exports['tls_sickness']:GetSicknessForHUD()  -- Return 0-100 infection level
+  end
    ```
 3. Qbcore Items (For Core Inventory) Check Install foldor for image
-  ```
+  ```lua
   sickness_pills   = { name = 'sickness_pills', label = 'Sickness Pills', weight = 0, type = 'item', image = 'sickness_pills.png', unique = false, useable = true, shouldClose = true, description = 'The Label Has Been Ripped Off', x = 1,   y = 2, category = 'ENTER YOUR CATEGORY HERE!!!!!!', },
   ```
   (Non Core Inventory)
-  ```
+  ```lua
   sickness_pills   = { name = 'sickness_pills', label = 'Sickness Pills', weight = 0, type = 'item', image = 'sickness_pills.png', unique = false, useable = true, shouldClose = true, description = 'The Label Has Been Ripped Off',},
   ```
 
