@@ -6,9 +6,9 @@ DayZ-style sickness for QB-Core. Wet exposure causes illness; eating human/zombi
 1. Drop the folder into `resources` and `ensure tls_sickness` **after** `qb-core` (and `hate-temp` if your using it).
 2. HUD hook (example for hate-dayzhud):
    ```lua
-  Config.GetInfection = function()
-      return exports['tls_sickness']:GetSicknessForHUD()  -- Return 0-100 infection level
-  end
+    Config.GetInfection = function()
+        return exports['tls_sickness']:GetSicknessForHUD()  -- Return 0-100 infection level
+    end
    ```
 3. Qbcore Items (For Core Inventory) Check Install foldor for image
   ```lua
